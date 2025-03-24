@@ -18,7 +18,7 @@ export const calculatePipeLength = (length, width, pipeWidth, step) => {
     const gapCountLength = Math.ceil((length - pipeWidthMeters) / step);
     const tubeCountWidth = gapCountWidth + 1;
     const tubeCountLength = gapCountLength + 1;
-    const totalLength = (tubeCountLength * width) + (tubeCountWidth * length);
+    const totalLength = (tubeCountLength * length) + (tubeCountWidth * width);
     const roundedTotalLength = +totalLength.toFixed(2);
 
     return roundedTotalLength;

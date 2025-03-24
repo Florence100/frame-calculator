@@ -7,7 +7,7 @@ const SizeInput = ({ config, onChange }) => {
 
     return (
         <div className="size-input">
-            <div>
+            <div className="size-input__field">
                 <label htmlFor="length">Длина каркаса (от {lengthConfig?.min} до {lengthConfig?.max}м):</label>
                 <input
                     id="length"
@@ -17,6 +17,8 @@ const SizeInput = ({ config, onChange }) => {
                     step={lengthConfig?.step}
                     onChange={(e) => onChange('length', parseFloat(e.target.value))}
                 />
+            </div>
+            <div className="size-input__field">
                 <label htmlFor="width">Ширина каркаса (от {widthConfig?.min} до {widthConfig?.max}м):</label>
                 <input
                     id="width"

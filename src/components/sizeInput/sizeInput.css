@@ -1,0 +1,10 @@
+.size-input,
+.size-input__field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.size-input {
+    gap: 20px;
+}

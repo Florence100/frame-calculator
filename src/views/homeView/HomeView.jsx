@@ -64,10 +64,10 @@ const HomeView = () => {
         if (input.length && input.width && input.material) {
             try {
                 const screws = calculateScrewCount(
-                    input.length, 
-                    input.width, 
-                    input.material, 
-                    config, 
+                    input.length,
+                    input.width,
+                    input.material,
+                    config,
                     materials
                 );
                 setScrewCount(screws);

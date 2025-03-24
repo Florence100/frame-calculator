@@ -1,0 +1,11 @@
+.home-view {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.home-view__result {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
